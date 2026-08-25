@@ -7,7 +7,7 @@
 <meta name="theme-color" content="#003478">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="assets/icons/icon-192.png">
-<link rel="stylesheet" href="css/style.css?v=6">
+<link rel="stylesheet" href="css/style.css?v=7">
 </head>
 <body>
 <div class="screen">
@@ -21,7 +21,18 @@
   <div class="screen-shot-wrap">
     <img src="assets/screens/prevention.png" alt="예방법">
   </div>
+
+  <button class="listen-btn" data-audio="assets/audio/prevention-desc.mp3" data-status-for="playStatus" aria-label="예방법 음성으로 듣기">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 010 7"/><path d="M18.5 5.5a9 9 0 010 13"/>
+    </svg>
+    음성으로 듣기
+  </button>
+  <p class="play-status" id="playStatus"></p>
 </div>
-<script src="js/app.js?v=6"></script>
+<script src="js/app.js?v=7"></script>
+<script>
+  document.querySelectorAll('[data-audio]').forEach(setupAudioButton);
+</script>
 </body>
 </html>
