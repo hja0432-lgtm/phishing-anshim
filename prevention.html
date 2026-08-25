@@ -7,10 +7,10 @@
 <meta name="theme-color" content="#003478">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="assets/icons/icon-192.png">
-<link rel="stylesheet" href="css/style.css?v=8">
+<link rel="stylesheet" href="css/style.css?v=9">
 </head>
 <body>
-<div class="screen">
+<div class="screen allow-scroll">
   <div class="topbar">
     <a class="back-btn" href="index.html">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
@@ -18,7 +18,7 @@
     </a>
   </div>
 
-  <div class="screen-shot-wrap top-align">
+  <div class="screen-shot-wrap top-align auto-size">
     <img src="assets/screens/prevention.png" alt="예방법">
   </div>
 
@@ -30,7 +30,7 @@
   </button>
   <p class="play-status" id="playStatus"></p>
 </div>
-<script src="js/app.js?v=8"></script>
+<script src="js/app.js?v=9"></script>
 <script>
   document.querySelectorAll('[data-audio]').forEach(setupAudioButton);
 </script>

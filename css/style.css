@@ -78,6 +78,17 @@ body{
 .screen-shot-wrap.top-align{
   align-items: flex-start;
 }
+.screen-shot-wrap.auto-size{
+  flex: 0 1 auto;
+}
+.screen-shot-wrap.auto-size img{
+  max-height: none;
+  aspect-ratio: 1206 / 2400;
+}
+.screen.allow-scroll{
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
 .screen-shot-wrap img{
   max-width: 100%;
   max-height: 100%;
