@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>보이스피싱 파헤치기 - 피싱안심</title>
+<meta name="theme-color" content="#003478">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/icons/icon-192.png">
+<link rel="stylesheet" href="css/style.css?v=4">
+</head>
+<body>
+<div class="screen">
+  <div class="topbar">
+    <a class="back-btn" href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+      뒤로
+    </a>
+  </div>
+
+  <div class="screen-shot-wrap">
+    <img id="shotImg" src="assets/screens/types.png" alt="보이스피싱 파헤치기 목록">
+    <div class="hotspot-layer" id="hotspotLayer">
+      <a class="hotspot" style="left:12.44%;top:9.95%;width:74.88%;height:7.32%" href="type.html?id=institution" aria-label="기관사칭형"></a>
+      <a class="hotspot" style="left:12.44%;top:19.34%;width:74.88%;height:7.32%" href="type.html?id=loan" aria-label="대출빙자"></a>
+      <a class="hotspot" style="left:12.44%;top:28.72%;width:74.88%;height:7.32%" href="type.html?id=kidnap" aria-label="납치빙자"></a>
+      <a class="hotspot" style="left:12.44%;top:38.10%;width:74.88%;height:7.32%" href="type.html?id=acquaintance" aria-label="지인사칭"></a>
+      <a class="hotspot" style="left:12.44%;top:47.48%;width:74.88%;height:7.32%" href="type.html?id=noshow" aria-label="노쇼사기"></a>
+      <a class="hotspot" style="left:12.44%;top:56.86%;width:74.88%;height:7.32%" href="type.html?id=investment" aria-label="투자리딩방"></a>
+      <a class="hotspot" style="left:12.44%;top:66.25%;width:74.88%;height:7.32%" href="type.html?id=teammission" aria-label="팀미션사기"></a>
+      <a class="hotspot" style="left:12.44%;top:75.63%;width:74.88%;height:7.32%" href="type.html?id=romance" aria-label="로맨스스캠"></a>
+      <a class="hotspot" style="left:12.44%;top:85.01%;width:74.88%;height:7.32%" href="type.html?id=smishing" aria-label="스미싱"></a>
+    </div>
+  </div>
+</div>
+
+<script src="js/app.js?v=4"></script>
+<script>
+  syncHotspotLayer(document.getElementById('shotImg'), document.getElementById('hotspotLayer'));
+</script>
+</body>
+</html>

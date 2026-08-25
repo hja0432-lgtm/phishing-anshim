@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>피싱안심</title>
+<meta name="description" content="고령층을 위한 보이스피싱 예방 음성 안내 서비스">
+<meta name="theme-color" content="#003478">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/icons/icon-192.png">
+<link rel="apple-touch-icon" href="assets/icons/icon-180.png">
+<link rel="stylesheet" href="css/style.css?v=4">
+</head>
+<body>
+<div class="screen">
+  <div class="screen-shot-wrap">
+    <img id="shotImg" src="assets/screens/index.png" alt="피싱 안심">
+    <div class="hotspot-layer" id="hotspotLayer">
+      <a class="hotspot" style="left:7.96%;top:19.11%;width:84.08%;height:13.16%" href="types.html" aria-label="보이스피싱 파헤치기"></a>
+      <a class="hotspot" style="left:7.96%;top:34.21%;width:84.08%;height:13.16%" href="fake-apps.html" aria-label="실제 사칭앱"></a>
+      <a class="hotspot" style="left:7.96%;top:49.31%;width:84.08%;height:13.16%" href="prevention.html" aria-label="예방법"></a>
+      <a class="hotspot" style="left:7.96%;top:64.42%;width:84.08%;height:13.16%" href="detect-apps.html" aria-label="악성앱 탐지 어플"></a>
+      <a class="hotspot" style="left:8.21%;top:79.63%;width:39.55%;height:9.73%" href="tel:1394" aria-label="1394 상담 및 신고"></a>
+      <a class="hotspot" style="left:52.24%;top:79.63%;width:39.55%;height:9.73%" href="tel:112" aria-label="112 긴급신고"></a>
+    </div>
+  </div>
+</div>
+
+<script src="js/app.js?v=4"></script>
+<script>
+  syncHotspotLayer(document.getElementById('shotImg'), document.getElementById('hotspotLayer'));
+</script>
+</body>
+</html>
