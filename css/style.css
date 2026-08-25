@@ -75,6 +75,9 @@ body{
   align-items: center;
   justify-content: center;
 }
+.screen-shot-wrap.top-align{
+  align-items: flex-start;
+}
 .screen-shot-wrap img{
   max-width: 100%;
   max-height: 100%;
