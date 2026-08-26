@@ -7,7 +7,7 @@
 <meta name="theme-color" content="#003478">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="assets/icons/icon-192.png">
-<link rel="stylesheet" href="css/style.css?v=15">
+<link rel="stylesheet" href="css/style.css?v=17">
 </head>
 <body>
 <div class="screen allow-scroll">
@@ -27,8 +27,9 @@
 
   <p class="play-status" id="playStatus"></p>
 </div>
-<script src="js/app.js?v=15"></script>
+<script src="js/app.js?v=17"></script>
 <script>
+  window.scrollTo(0, 0);
   document.querySelectorAll('[data-audio]').forEach(setupAudioButton);
   syncHotspotLayer(document.getElementById('shotImg'), document.getElementById('hotspotLayer'));
 </script>

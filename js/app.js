@@ -59,6 +59,9 @@ function setupAudioButton(btn){
 
     btn.classList.add('playing');
     setStatus(statusEl, '<span class="dot"></span> 재생 중입니다 · 다시 누르면 정지');
+    if (statusEl && statusEl.scrollIntoView) {
+      statusEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
 
     audio.addEventListener('timeupdate', () => {
       if (isFinite(audio.duration)) {
