@@ -7,10 +7,10 @@
 <meta name="theme-color" content="#003478">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="assets/icons/icon-192.png">
-<link rel="stylesheet" href="css/style.css?v=17">
+<link rel="stylesheet" href="css/style.css?v=18">
 </head>
 <body>
-<div class="screen allow-scroll">
+<div class="screen">
   <div class="topbar">
     <a class="back-btn" href="index.html">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
@@ -18,7 +18,7 @@
     </a>
   </div>
 
-  <div class="screen-shot-wrap auto-size">
+  <div class="screen-shot-wrap">
     <img id="shotImg" src="assets/screens/prevention.png" alt="예방법">
     <div class="hotspot-layer" id="hotspotLayer">
       <button class="hotspot" style="left:8.21%;top:82.84%;width:83.58%;height:7.89%" data-audio="assets/audio/prevention-desc.mp3" data-status-for="playStatus" aria-label="예방법 음성으로 듣기"></button>
@@ -27,9 +27,9 @@
 
   <p class="play-status" id="playStatus"></p>
 </div>
-<script src="js/app.js?v=17"></script>
+
+<script src="js/app.js?v=18"></script>
 <script>
-  window.scrollTo(0, 0);
   document.querySelectorAll('[data-audio]').forEach(setupAudioButton);
   syncHotspotLayer(document.getElementById('shotImg'), document.getElementById('hotspotLayer'));
 </script>
