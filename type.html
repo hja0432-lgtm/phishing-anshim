@@ -7,7 +7,7 @@
 <meta name="theme-color" content="#003478">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="assets/icons/icon-192.png">
-<link rel="stylesheet" href="css/style.css?v=19">
+<link rel="stylesheet" href="css/style.css?v=20">
 </head>
 <body>
 <div class="screen">
@@ -26,8 +26,8 @@
   <p class="play-status" id="playStatus"></p>
 </div>
 
-<script src="js/types-data.js?v=19"></script>
-<script src="js/app.js?v=19"></script>
+<script src="js/types-data.js?v=20"></script>
+<script src="js/app.js?v=20"></script>
 <script>
   const params = new URLSearchParams(location.search);
   const id = params.get('id');
@@ -39,7 +39,7 @@
     document.querySelector('.screen-shot-wrap').innerHTML = '<p style="text-align:center;padding:40px 20px;">유형을 찾을 수 없습니다</p>';
   } else {
     document.title = `${type.title} - 피싱안심`;
-    img.src = type.image + '?v=19';
+    img.src = type.image + '?v=20';
     img.alt = `[${type.title}]`;
 
     const descBtn = document.createElement('button');
