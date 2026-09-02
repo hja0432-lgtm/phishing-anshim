@@ -39,7 +39,7 @@
     document.querySelector('.screen-shot-wrap').innerHTML = '<p style="text-align:center;padding:40px 20px;">유형을 찾을 수 없습니다</p>';
   } else {
     document.title = `${type.title} - 피싱안심`;
-    img.src = type.image;
+    img.src = type.image + '?v=19';
     img.alt = `[${type.title}]`;
 
     const descBtn = document.createElement('button');
