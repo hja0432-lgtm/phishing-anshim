@@ -61,11 +61,11 @@ const PHISHING_TYPES = [
   }
 ];
 
-// 원본 디자인 기준(크롭 후 402x550) 버튼 위치 - % 값
+// 원본 디자인 기준(402x874) 버튼 위치 - % 값
 const HOTSPOT_TWO_BTN = {
-  desc: 'left:8.46%;top:26.36%;width:83.58%;height:28.18%',
-  real: 'left:7.96%;top:57.82%;width:84.08%;height:27.64%'
+  desc: 'left:8.46%;top:33.75%;width:83.58%;height:17.73%',
+  real: 'left:7.96%;top:53.78%;width:84.08%;height:17.73%'
 };
 const HOTSPOT_ONE_BTN = {
-  desc: 'left:8.46%;top:26.36%;width:83.58%;height:59.82%'
+  desc: 'left:8.46%;top:33.75%;width:83.58%;height:37.64%'
 };
