@@ -7,7 +7,7 @@
 <meta name="theme-color" content="#003478">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="assets/icons/icon-192.png">
-<link rel="stylesheet" href="css/style.css?v=18">
+<link rel="stylesheet" href="css/style.css?v=19">
 </head>
 <body>
 <div class="screen">
@@ -21,14 +21,14 @@
   <div class="screen-shot-wrap">
     <img id="shotImg" src="assets/screens/prevention.png" alt="예방법">
     <div class="hotspot-layer" id="hotspotLayer">
-      <button class="hotspot" style="left:8.21%;top:82.84%;width:83.58%;height:7.89%" data-audio="assets/audio/prevention-desc.mp3" data-status-for="playStatus" aria-label="예방법 음성으로 듣기"></button>
+      <button class="hotspot" style="left:8.21%;top:80.55%;width:83.33%;height:7.78%" data-audio="assets/audio/prevention-desc.mp3" data-status-for="playStatus" aria-label="예방법 음성으로 듣기"></button>
     </div>
   </div>
 
   <p class="play-status" id="playStatus"></p>
 </div>
 
-<script src="js/app.js?v=18"></script>
+<script src="js/app.js?v=19"></script>
 <script>
   document.querySelectorAll('[data-audio]').forEach(setupAudioButton);
   syncHotspotLayer(document.getElementById('shotImg'), document.getElementById('hotspotLayer'));
